@@ -4,7 +4,7 @@ body
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh;
+    height: 65vh;
     background-color: hsl(0, 0%, 95%);
     
 }
@@ -13,7 +13,8 @@ body
     font-family: Arial, sans-serif;
     background-color: hsl(0, 0%, 15%);
     border-radius: 5%;
-    max-width: 500px;
+    max-height: 600px;
+    max-width: 350px;
     overflow: hidden;
 }
 #display1
@@ -44,14 +45,14 @@ body
 {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    gap: 10px;
+    gap: 5px;
     padding: 25px;
 
 }
 button
 {
-    width: 100px;
-    height: 100px;
+    width: 70px;
+    height: 70px;
     border-radius: 50px;
     border: none;
     background-color: hsl(0, 0%, 30%);

@@ -28,6 +28,7 @@ function calculate()
     {
         let processedInput = display.value.replace(/\^/g, '**');
         display2.value = eval(processedInput);
+        
     }
     catch(error)
     {
