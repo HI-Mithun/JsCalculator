@@ -2,9 +2,15 @@
 
 const display = document.getElementById("display1");
 const display2 = document.getElementById("display2");
+
 function appendToDisplay(input)
 {
+    console.log(input);
     display.value += input;
+    // display.value += (input=='^')? '**': input;
+
+    
+    
 }
 function erase()
 {
@@ -20,7 +26,8 @@ function calculate()
 {
     try
     {
-        display2.value = eval(display.value);
+        let processedInput = display.value.replace(/\^/g, '**');
+        display2.value = eval(processedInput);
     }
     catch(error)
     {
